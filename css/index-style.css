@@ -1,0 +1,228 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    
+  }
+
+  /* start nav  */
+
+.navbar-brand {
+    font-weight: 500;
+}
+  .navbar .navbar-nav .nav-link {
+    color: #00A7DC;
+    font-weight: 500;
+  }
+
+
+.navbar .navbar-nav .nav-item  .active:hover {
+  background-color: #00A7DC;
+  border-radius: 20px;
+  color: azure;
+} 
+
+  .navbar .navbar-toggler,
+  .navbar .navbar-toggler:hover {
+    color: #00A7DC;
+    font-size: 25px;
+    border-color: #00A7DC;
+  }
+/* /////////nav end//////// */
+/* /////////main start//////// */
+/* /////////main hero section//////// */
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url(../img/excavator-action.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.heroSection .textHero{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.heroSection .textHero div {
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    padding: 0.5rem;
+    width: 40%;
+    color: #000000;
+    background-color: rgba(250, 248, 244, 0.658);
+}
+@media ((max-width: 600px)){
+    .heroSection .textHero div{
+        width: 100%;
+    }
+}
+.calculator{
+    color: #fff;
+    background-color: #00A7DC;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    transition: 0.7s ease;
+}
+.calculator:hover{
+    box-shadow: 0 4px 20px 0 #4D47C3;
+    transform: scale(1.1);
+}
+/* ////////hero section end ////////// */
+/* ////////services section////////// */
+.title-h1{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin: 2rem 0;
+    letter-spacing: 1px;
+}
+.title-h5{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+ .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:2rem ;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    margin-bottom: 2rem;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #00A7DC;
+    font-size: 5em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+@media (max-width:1023px){
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* ////////services section////////// */
+/* ////////contact us section////////// */
+.container h2 {
+    color: #000;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin: 4rem 0 ;
+}
+.ContactAll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ContactAll .ContactRight{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.ContactAll .Contactleft{
+    width: 40%;
+}
+.ContactRight h2,.ContactRight p ,.box .line {
+    margin: .9rem 0;
+}
+.info span {
+    display: block;
+    line-height: 1.7;
+    flex: 1;
+  }
+.line i {
+    color: #00A7DC;
+    margin: 0 1rem 0 0 ;
+    font-size: larger;
+}
+input .form-control{
+    background-color: #4D47C3;
+}
+@media ((max-width: 530px)){
+    .ContactAll{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .ContactAll .ContactRight, .ContactAll .Contactleft{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* .ContactRight form button.btn .btn-block .mb-4{
+    color: #000000;
+} */
+/* ////////contact us section////////// */
+/* //////foooter start//////////// */
+.container .row .col-6 h5 {
+    color: #00A7DC;
+}
+.fa-2x{
+    color: #00A7DC;
+}

@@ -1,0 +1,113 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    background: red;
+    
+  }
+
+  /* start nav  */
+
+.navbar-brand {
+    font-weight: 500;
+}
+  .navbar .navbar-nav .nav-link {
+    color: #00A7DC;
+    font-weight: 500;
+  }
+
+
+.navbar .navbar-nav .nav-item  .active:hover {
+  background-color: #00A7DC;
+  border-radius: 20px;
+  color: azure;
+} 
+
+  .navbar .navbar-toggler,
+  .navbar .navbar-toggler:hover {
+    color: #00A7DC;
+    font-size: 25px;
+    border-color: #00A7DC;
+  }
+/* ///////////////// */
+/* ///////////////// */
+
+.sign-in{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    align-items: center;
+}
+.sign-in .text{
+
+    margin: 2rem 0;
+}
+
+.sign-in .text h1,.sign-in .text h2 {
+ font-weight: bold;
+ padding-bottom: 1.5rem;
+}
+
+.Register {
+text-decoration: none;
+color: #00A7DC;
+}
+.form-login{
+    padding-top:7rem ;
+    width: 40%;
+
+}
+.form-login form .btn{
+    color: #fff;
+    font-weight: 500;
+}
+.form-login form .btn:hover{
+    box-shadow: 0 4px 20px 0 #4D47C3;
+
+}
+#floatingInput, #floatingPassword ,#floatingUserName , #floatingPhoneNumber{
+    background: #F0EFFF;
+}
+label{
+    color: #00A7DC;
+}
+/* .text-center{
+    padding-top: 1.5rem;
+} */
+@media (max-width: 768px) {
+    .edit{
+        margin: 10rem 0;
+    }
+    .sign-in{
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+    .sign-in .text{
+
+        margin-top: 7rem;
+    }
+    .form-login{
+        width: 60%;
+        margin-bottom: 10rem;
+    
+    }
+}
+/* ////////////////// */
+/* ////////////////// */
+.container .row .col-6 h5 {
+    color: #00A7DC;
+}
+.fa-2x{
+    color: #00A7DC;
+}
+
