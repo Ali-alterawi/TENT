@@ -9,4 +9,6 @@ figma
 
 mockup and wireframe link
 
-[ Direct link ] (https://www.figma.com/file/Ddhof4PzDXpOnQDUxDrLaq/masterpiece?node-id=0%3A1&t=pnoZiGAOBMKFCghy-1)
+[ Direct link ](https://www.figma.com/file/Ddhof4PzDXpOnQDUxDrLaq/masterpiece?node-id=0%3A1&t=pnoZiGAOBMKFCghy-1)
+
+[live demo](https://ali-alterawi.github.io/TENT/)
