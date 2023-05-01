@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index-style.css">
+    <link rel="stylesheet" href="css/index-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/all.min.css">
-    <title>log in</title>
+    <title>TENT</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top">
             <div class="container">
               <a class="navbar-brand " href="#"> <img src="../img/tent.png" alt="Logo"> TENT</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,18 +40,177 @@
           </nav>
     </header>
     <main>
+      <!-- Start heroSection -->
       <section class="heroSection">
         <div class="textHero container">
           <div>
           <h2>We build your dreams</h2>
           <h5>we provide all services you want to complete your projects from A-Z</h5>
-          <h6>Build your dream and get an estimate instantly
-          </h6>
+          <p>Build your dream and get an estimate instantly
+          </p>
           <button class="calculator">Calculator</button>
         </div></div>
       </section>
-      <!-- Start services -->
-      <section class="cards container" id="services">
+      <!-- End heroSection -->
+      <!-- Start features -->
+      <div class="features text-center pt-5 pb-5">
+        <div class="container">
+          <div class="main-title mt-5 mb-5 position-relative ">
+            <h2>What distinguishes us from others ?</h2>
+            <p class="text-black-50 text-uppercase">Some Of These Our features below</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="feat">
+                <div class="icon-holder position-relative">
+                  <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+                  <i class="fa-solid fa-money-bill-1-wave fa-4x position-absolute bottom-0 icon"></i>
+                </div>
+                <h4 class="mb-3 mt-3 text-uppercase">Secure your money</h4>
+                <p class="text-black-50 lh-lg">
+                  Guarantee to get your order and if the other party fails to commit to our agreement, we will cover all  your money.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feat">
+                <div class="icon-holder position-relative">
+                  <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+                  <i class="fa-solid fa-message fa-4x position-absolute bottom-0 icon"></i>
+                </div>
+                <h4 class="mb-3 mt-3 text-uppercase">Response with 48hours</h4>
+                <p class="text-black-50 lh-lg">
+                  Get a first response within 48 hours with an initial cost, except Public holidays and Official holidays.              </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feat">
+                <div class="icon-holder position-relative">
+                  <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+                  <i class="fa-solid fa-calculator fa-4x position-absolute bottom-0 icon"></i>
+                </div>
+                <h4 class="mb-3 mt-3 text-uppercase">Auto-calculator</h4>
+                <p class="text-black-50 lh-lg">
+                  Calculate the cost by using our online calculator, it will save you time and let you expect the initial value.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End features -->
+      <!-- Start our-work -->
+      <div class="our-work text-center pt-5 pb-5">
+        <div class="container">
+          <div class="main-title mt-5 mb-5 position-relative">
+            <img class="mb-4 img-logo" src="/img/engineer.png" alt="" />
+            <h2>Our partners</h2>
+            <p class="text-black-50 text-uppercase">would you like to join us as a partner </p>
+            <div class="d-flex justify-content-center mt-5">
+              <a class="btn rounded-pill main-btn text-uppercase" href="#">Click here</a>
+            </div>
+          </div>
+          <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
+            <li onclick="showAll()" id="all" class="active rounded-pill">All</li>
+            <li onclick="showEDO()" id="edo" >Engineering design Offices</li>
+            <li onclick="showQSO()" id="qso" >Quantity serving Offices</li>
+            <li onclick="showIDO()" id="ido" >Interior design Offices</li>
+            
+          </ul>
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-1-1">
+              <div class="box mb-3 bg-white" data-work="KD ENGINEERING">
+                <img class="img-fluid" src="/img/office-1.png" alt="KD ENGINEERING" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-1-2">
+              <div class="box mb-3 bg-white" data-work="BLUEPRINT">
+                <img class="img-fluid" src="/img/office-2.png" alt="BLUEPRINT" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-1-3">
+              <div class="box mb-3 bg-white" data-work="BBK">
+                <img class="img-fluid " src="/img/office-3.png" alt="BBK" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-1-4">
+              <div class="box mb-3 bg-white" data-work="360ENGINEERING">
+                <img class="img-fluid" src="/img/office-4.png" alt="360ENGINEERING" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-2-1">
+              <div class="box mb-3 bg-white" data-work="360ENGINEERING">
+                <img class="img-fluid" src="/img/QS-1-transformed.jpeg" alt="360ENGINEERING" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-2-2">
+              <div class="box mb-3 bg-white" data-work="360ENGINEERING">
+                <img class="img-fluid" src="/img/QS-2-transformed.jpeg" alt="360ENGINEERING" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-2-3">
+              <div class="box mb-3 bg-white" data-work="360ENGINEERING">
+                <img class="img-fluid" src="/img/QS-3-transformed.jpeg" alt="360ENGINEERING" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-3-1">
+              <div class="box mb-3 bg-white" data-work="360ENGINEERING">
+                <img class="img-fluid" src="/img/interiorDesign-1.jpeg" alt="360ENGINEERING" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-3-2">
+              <div class="box mb-3 bg-white" data-work="360ENGINEERING">
+                <img class="img-fluid" src="/img/interiorDesign-2.jpeg" alt="360ENGINEERING" />
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3" id="img-3-3">
+              <div class="box mb-3 bg-white" data-work="360ENGINEERING">
+                <img class="img-fluid" src="/img/interiorDesign-3.jpeg" alt="360ENGINEERING" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End our-work -->
+      <!-- Start Work Steps -->
+      <div class="work-steps" id="work-steps">
+          <h2 class="text-center fs-1 fw-bold mb-3">Services</h2>
+          <div class="container">
+            <img decoding="async" src="/img/bricks.jpg" alt="" class="image" />
+            <div class="info">
+              <div class="box">
+                <img decoding="async" src="/img/crane.png" alt="" />
+                <div class="text">
+                  <h3 class="text-uppercase">Engineering design</h3>
+                  <p>
+                    work on all types of projects and buildings with their various functional specializations, their different architectural styles, whatever the culture of the surrounding community, as well as their various budgets
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <img decoding="async" src="/img/construction-try-2.png" alt="" />
+                <div class="text">
+                  <h3 class="text-uppercase">Quantity serving</h3>
+                  <p>
+                    Our partners carry out the work of calculating quantities, requirements and specifications of materials
+                  </p>
+                </div>
+              </div>
+              <div class="box">
+                <img decoding="async" src="img/construction-try-3.png" alt="" />
+                <div class="text">
+                  <h3 class="text-uppercase">Interior design</h3>
+                  <p>
+                    work on all decorative styles, from classic to modern, high-tech, where we do interior design work for spaces to suit the client’s taste and requirements 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- End Work Steps -->
+                  <!-- Start services -->
+                  <!-- <section class="cards container" id="services">
         <h1 class="title-h1">Services</h1>
         <h5 class="title-h5">enjoy with our features for your home , we help you form A-Z </h5>
         <div class="content">
@@ -80,10 +239,142 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End services -->
+    </section> -->
+                  <!-- End services --> 
+      <!-- gradient-custom -->
+      <section class="gradient-custom">
+        <div class="container my-5 py-5">
+          <h2 class="text-center fs-2">Trusted by hundreds of 
+            Happy Customer</h2>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+              <div class="text-center mb-4 pb-2">
+                <i class="fas fa-quote-left fa-2x text-info"></i>
+              </div>
+      
+              <div class="card">
+                <div class="card-body px-4 py-5">
+                  <!-- Carousel wrapper -->
+                  <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators  mb-0">
+                      <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                      <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"
+                        aria-label="Slide 1"></button>
+                      <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"
+                        aria-label="Slide 1"></button>
+                    </div>
+      
+                    <!-- Inner -->
+                    <div class="carousel-inner pb-5">
+                      <!-- Single item -->
+                      <div class="carousel-item active">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-lg-10 col-xl-8">
+                            <div class="row">
+                              <div class="col-lg-4 d-flex justify-content-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                  class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
+                                  height="150" />
+                              </div>
+                              <div
+                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                                <h3 class="mb-4">Maria Smantha - Bussines Woman</h3>
+                                <p class="mb-0 pb-3">
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                  aliquam amet animi blanditiis consequatur debitis dicta
+                                  distinctio, enim error eum iste libero modi nam natus
+                                  perferendis possimus quasi sint sit tempora voluptatem. Est,
+                                  exercitationem id ipsa ipsum laboriosam perferendis.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Single item -->
+                      <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-lg-10 col-xl-8">
+                            <div class="row">
+                              <div class="col-lg-4 d-flex justify-content-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                  class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
+                                  height="150" />
+                              </div>
+                              <div
+                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                                <h4 class="mb-4">Lisa Cudrow - Graphic Designer</h4>
+                                <p class="mb-0 pb-3">
+                                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                                  ipsa quae ab illo inventore veritatis et quasi architecto
+                                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                                  quia voluptas sit aspernatur.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Single item -->
+                      <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-lg-10 col-xl-8">
+                            <div class="row">
+                              <div class="col-lg-4 d-flex justify-content-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                  class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
+                                  height="150" />
+                              </div>
+                              <div
+                                class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                                <h4 class="mb-4">John Smith - Marketing Specialist</h4>
+                                <p class="mb-0 pb-3">
+                                  At vero eos et accusamus et iusto odio dignissimos qui
+                                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                                  dolores et quas molestias excepturi sint occaecati cupiditate
+                                  non provident, similique sunt in culpa qui officia mollitia
+                                  animi id laborum et dolorum fuga.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Inner -->
+      
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant"
+                      data-mdb-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant"
+                      data-mdb-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <!-- Carousel wrapper -->
+                </div>
+              </div>
+      
+              <div class="text-center mt-4 pt-2">
+                <i class="fas fa-quote-right fa-2x text-info"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <!-- end gradient-custom -->
+      <!-- Start contact -->
       <section class="container">
-        <h2 class="text-center">Contact us</h2>
+        <h2 class="text-center fs-1 fw-bold mb-3">Contact us</h2>
         <div class="ContactAll">
           <div class="ContactRight">
             <h4>We'd love to hear from you</h4>
@@ -136,8 +427,8 @@
           </div>
         </div>
       </section>
+      <!-- end contact -->
     </main>
-
     <footer class="shadow">
         <div class="container ">
               <div class="row pt-5">
@@ -197,7 +488,7 @@
           </div>
           
     </footer>
-      <script src=""></script>
+      <script src="/javaS/test.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

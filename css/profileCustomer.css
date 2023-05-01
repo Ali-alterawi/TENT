@@ -1,0 +1,38 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    
+  }
+
+  /* start nav  */
+
+.navbar-brand {
+    font-weight: 500;
+}
+  .navbar .navbar-nav .nav-link {
+    color: #00A7DC;
+    font-weight: 500;
+  }
+
+
+.navbar .navbar-nav .nav-item  .active:hover {
+  background-color: #00A7DC;
+  border-radius: 20px;
+  color: azure;
+} 
+
+  .navbar .navbar-toggler,
+  .navbar .navbar-toggler:hover {
+    color: #00A7DC;
+    font-size: 25px;
+    border-color: #00A7DC;
+  }
+/* ///////////////// */

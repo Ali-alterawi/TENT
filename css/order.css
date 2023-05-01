@@ -1,0 +1,100 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    
+  }
+
+  /* start nav  */
+
+.navbar-brand {
+    font-weight: 500;
+}
+  .navbar .navbar-nav .nav-link {
+    color: #00A7DC;
+    font-weight: 500;
+  }
+
+
+.navbar .navbar-nav .nav-item  .active:hover {
+  background-color: #00A7DC;
+  border-radius: 20px;
+  color: azure;
+} 
+
+  .navbar .navbar-toggler,
+  .navbar .navbar-toggler:hover {
+    color: #00A7DC;
+    font-size: 25px;
+    border-color: #00A7DC;
+  }
+/* ///////////////// */
+/* start form */
+h4{
+    padding: 5px;
+    color: #5F6D7E;
+}
+label{
+    color: #5F6D7E;
+    font-size: x-small;
+}
+input , select , textarea{
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    background-color:#F0EFFF;
+    margin: 4px 0;
+    border-radius: 4px;
+    /* padding:5px; */
+    color: #000;
+}
+input:focus{
+    transform: scale(1.05);
+}
+textarea{
+    height: 5rem;
+}
+#submit{
+    width: 10%;
+    padding: 0.4rem 0 2rem 0;
+    cursor: pointer;
+    background: #00A7DC;
+    color: #fff;
+}
+#submit:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px 0 #4D47C3;
+    cursor: pointer;
+}
+.file{
+    height: 2.5rem;
+}
+::-webkit-file-upload-button {
+    background: #00A7DC;
+    color: #fff;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    height: 2.5rem;
+  }
+  @media (max-width: 768px){
+    #submit{
+        width: 100%;
+    }
+  }
+  /* form end */
+  /* start footer */
+.container .row .col-6 h5 {
+    color: #00A7DC;
+}
+.fa-2x{
+    color: #00A7DC;
+}
